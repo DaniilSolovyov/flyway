@@ -183,6 +183,7 @@
         <version.springjdbc>5.3.19</version.springjdbc>
         <version.sqlite>3.34.0</version.sqlite>
         <version.testcontainers>1.15.3</version.testcontainers>
+        <version.yandex>1.45.6</version.yandex>
     </properties>
 
     <dependencyManagement>
@@ -523,6 +524,12 @@
                 <groupId>com.amazonaws.secretsmanager</groupId>
                 <artifactId>aws-secretsmanager-jdbc</artifactId>
                 <version>${version.aws-secretsmanager}</version>
+                <optional>true</optional>
+            </dependency>
+            <dependency>
+                <groupId>com.yandex.ydb</groupId>
+                <artifactId>ydb-sdk-jdbc</artifactId>
+                <version>${version.yandex}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
